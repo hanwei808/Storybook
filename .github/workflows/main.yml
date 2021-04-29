@@ -56,5 +56,5 @@ jobs:
           cd /home/hanwei/Storybook
           wget https://github.com/hanwei808/Storybook/releases/latest/download/release.tgz -O release.tgz
           tar zxvf release.tgz
-          npm install --production
+          npm install
           npm run build-storybook
