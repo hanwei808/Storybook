@@ -1,16 +1,12 @@
 <template>
-  <div>
-    <el-button type="primary" @click="handleClick">
-      <slot></slot>
-    </el-button>
-  </div>
+  <div style="height: 5000px; border: solid 1px black;" @scroll="handleScroll"></div>
 </template>
 <script>
-import Vue from "vue";
-import ElementUI from "element-ui";
-import "element-ui/lib/theme-chalk/index.css";
+function scrollFn() {
+  console.log("滚动111");
+}
 
-Vue.use(ElementUI);
+window.onscroll = scrollFn();
 // 防抖处理
 let flag;
 function antiShakeFn(fnName, time) {
@@ -30,21 +26,21 @@ function antiShakeFn(fnName, time) {
   };
 }
 export default {
-  name: "HwButton",
+  name: "HwScroll",
   props: {
     openAntiShake: {
       type: Boolean,
     },
   },
-  mounted() {
-    flag = this.openAntiShake;
+  data() {
+    return {
+      count: 0,
+    };
   },
   methods: {
-    todo(evt) {
-      this.$emit("click", evt);
-      evt.preventDefault();
+    handleScroll() {
+      console.log("scroll");
     },
-    handleClick: antiShakeFn("todo", 300),
   },
 };
 </script>

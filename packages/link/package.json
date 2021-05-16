@@ -1,10 +1,10 @@
 {
-  "name": "lg-link",
+  "name": "Hw-link",
   "version": "0.0.3",
-  "description": "lg-link component",
+  "description": "Hw-link component",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
-  "author": "教瘦 <54337467@qq.com>",
+  "author": "韩伟 <hancenter808@outlook.com>",
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

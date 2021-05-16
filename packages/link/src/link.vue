@@ -1,28 +1,26 @@
 <template>
-  <a
-    :href="disabled ? null : href"
-    :class="[disabled && 'disabled', !underline && 'no-underline']">
-      <slot></slot>
-    </a>
+  <a :href="disabled ? null : href" :class="[disabled && 'disabled', !underline && 'no-underline']">
+    <slot></slot>
+  </a>
 </template>
 
 <script>
 export default {
-  name: 'LgLink',
+  name: "HwLink",
   props: {
     href: {
-      type: String
+      type: String,
     },
     disabled: {
       type: Boolean,
-      default: false
+      default: false,
     },
     underline: {
       type: Boolean,
-      default: false
-    }
-  }
-}
+      default: false,
+    },
+  },
+};
 </script>
 
 <style scoped>

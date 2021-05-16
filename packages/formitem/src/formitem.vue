@@ -9,49 +9,48 @@
 </template>
 
 <script>
-import AsyncValidator from 'async-validator'
+import AsyncValidator from "async-validator";
 export default {
-  name: 'LgFormItem',
-  inject: ['form'],
+  name: "HwFormItem",
+  inject: ["form"],
   props: {
     label: {
-      type: String
+      type: String,
     },
     prop: {
-      type: String
-    }
+      type: String,
+    },
   },
   mounted() {
-    this.$on('validate', () => {
-      console.log('xxxxx')
-      this.validate()
-    })
+    this.$on("validate", () => {
+      console.log("xxxxx");
+      this.validate();
+    });
   },
-  data () {
+  data() {
     return {
-      errMessage: ''
-    }
+      errMessage: "",
+    };
   },
   methods: {
-    validate () {
-      if (!this.prop) return
-      const value = this.form.model[this.prop]
-      const rules = this.form.rules[this.prop]
+    validate() {
+      if (!this.prop) return;
+      const value = this.form.model[this.prop];
+      const rules = this.form.rules[this.prop];
 
-      const descriptor = { [this.prop]: rules }
-      const validator = new AsyncValidator(descriptor)
-      return validator.validate({ [this.prop]: value }, errors => {
+      const descriptor = { [this.prop]: rules };
+      const validator = new AsyncValidator(descriptor);
+      return validator.validate({ [this.prop]: value }, (errors) => {
         if (errors) {
-          this.errMessage = errors[0].message
+          this.errMessage = errors[0].message;
         } else {
-          this.errMessage = ''
+          this.errMessage = "";
         }
-      })
-    }  
-  }
-}
+      });
+    },
+  },
+};
 </script>
 
 <style>
-
 </style>

@@ -2,7 +2,7 @@
 
 //
 var script = {
-  name: 'LgSteps',
+  name: 'HwSteps',
   props: {
     count: {
       type: Number,
@@ -161,16 +161,16 @@ var __vue_render__ = function() {
   var _c = _vm._self._c || _h;
   return _c(
     "div",
-    { staticClass: "lg-steps" },
+    { staticClass: "Hw-steps" },
     [
-      _c("div", { staticClass: "lg-steps-line" }),
+      _c("div", { staticClass: "Hw-steps-line" }),
       _vm._v(" "),
       _vm._l(_vm.count, function(index) {
         return _c(
           "div",
           {
             key: index,
-            staticClass: "lg-step",
+            staticClass: "Hw-step",
             style: {
               color: _vm.active >= index ? _vm.activeColor : _vm.defaultColor
             }

@@ -1,7 +1,7 @@
-import LgSteps from './src/steps.vue'
+import HwSteps from './src/steps.vue'
 
-LgSteps.install = Vue => {
-  Vue.component(LgSteps.name, LgSteps)
+HwSteps.install = Vue => {
+  Vue.component(HwSteps.name, HwSteps)
 }
 
-export default LgSteps
+export default HwSteps

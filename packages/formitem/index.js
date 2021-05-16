@@ -1,7 +1,7 @@
-import LgFormItem from './src/formitem.vue'
+import HwFormItem from './src/formitem.vue'
 
-LgFormItem.install = Vue => {
-  Vue.component(LgFormItem.name, LgFormItem)
+HwFormItem.install = Vue => {
+  Vue.component(HwFormItem.name, HwFormItem)
 }
 
-export default LgFormItem
+export default HwFormItem

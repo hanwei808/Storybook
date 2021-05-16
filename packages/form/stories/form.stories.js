@@ -1,28 +1,28 @@
-import LgForm from '../'
-import LgFormItem from '../../formitem'
-import LgInput from '../../input'
-import LgButton from '../../button'
+import HwForm from '../'
+import HwFormItem from '../../formitem'
+import HwInput from '../../input'
+import HwButton from '../../button'
 
 export default {
-  title: 'LgForm',
-  component: LgForm
+  title: 'HwForm',
+  component: HwForm
 }
 
 export const Login = () => ({
-  components: { LgForm, LgFormItem, LgInput, LgButton },
+  components: { HwForm, HwFormItem, HwInput, HwButton },
   template: `
-    <lg-form class="form" ref="form" :model="user" :rules="rules">
-      <lg-form-item label="用户名" prop="username">
-        <!-- <lg-input v-model="user.username"></lg-input> -->
-        <lg-input :value="user.username" @input="user.username=$event" placeholder="请输入用户名"></lg-input>
-      </lg-form-item>
-      <lg-form-item label="密码" prop="password">
-        <lg-input type="password" v-model="user.password"></lg-input>
-      </lg-form-item>
-      <lg-form-item>
-        <lg-button type="primary" @click="login">登 录</lg-button>
-      </lg-form-item>
-    </lg-form>
+    <Hw-form class="form" ref="form" :model="user" :rules="rules">
+      <Hw-form-item label="用户名" prop="username">
+        <!-- <Hw-input v-model="user.username"></Hw-input> -->
+        <Hw-input :value="user.username" @input="user.username=$event" placeholder="请输入用户名"></Hw-input>
+      </Hw-form-item>
+      <Hw-form-item label="密码" prop="password">
+        <Hw-input type="password" v-model="user.password"></Hw-input>
+      </Hw-form-item>
+      <Hw-form-item>
+        <Hw-button type="primary" @click="login">登 录</Hw-button>
+      </Hw-form-item>
+    </Hw-form>
   `,
   data () {
     return {

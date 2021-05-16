@@ -8,7 +8,7 @@
 //
 
 var script = {
-  name: 'LgForm',
+  name: 'HwForm',
   provide () {
     return {
       form: this

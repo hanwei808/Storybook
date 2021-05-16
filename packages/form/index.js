@@ -1,7 +1,7 @@
-import LgForm from './src/form.vue'
+import HwForm from './src/form.vue'
 
-LgForm.install = Vue => {
-  Vue.component(LgForm.name, LgForm)
+HwForm.install = Vue => {
+  Vue.component(HwForm.name, HwForm)
 }
 console.log('test')
-export default LgForm
+export default HwForm

@@ -8,7 +8,7 @@
 //
 
 var script = {
-  name: 'LgButton',
+  name: 'HwButton',
   methods: {
     handleClick (evt) {
       this.$emit('click', evt);

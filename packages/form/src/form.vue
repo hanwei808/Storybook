@@ -6,34 +6,33 @@
 
 <script>
 export default {
-  name: 'LgForm',
-  provide () {
+  name: "HwForm",
+  provide() {
     return {
-      form: this
-    }
+      form: this,
+    };
   },
   props: {
     model: {
-      type: Object
+      type: Object,
     },
     rules: {
-      type: Object
-    }
+      type: Object,
+    },
   },
   methods: {
-    validate (cb) {
+    validate(cb) {
       const tasks = this.$children
-        .filter(child => child.prop)
-        .map(child => child.validate())
+        .filter((child) => child.prop)
+        .map((child) => child.validate());
 
       Promise.all(tasks)
         .then(() => cb(true))
-        .catch(() => cb(false))
-    }
-  }
-}
+        .catch(() => cb(false));
+    },
+  },
+};
 </script>
 
 <style>
-
 </style>

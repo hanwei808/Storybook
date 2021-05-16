@@ -10,7 +10,7 @@
 //
 
 var script = {
-  name: 'LgLink',
+  name: 'HwLink',
   props: {
     href: {
       type: String
@@ -178,7 +178,7 @@ __vue_render__._withStripped = true;
   /* style */
   const __vue_inject_styles__ = function (inject) {
     if (!inject) return
-    inject("data-v-2847d94b_0", { source: "\n.disabled[data-v-2847d94b] {\r\n  cursor: not-allowed;\n}\n.no-underline[data-v-2847d94b] {\r\n  text-decoration: none;\n}\r\n", map: {"version":3,"sources":["D:\\Big_FrontEnd\\CodeBase\\fed-e-task-03-04\\note\\code\\3-4-3-3-组件库开发\\03-lgelement\\packages\\link\\src\\link.vue"],"names":[],"mappings":";AA4BA;EACA,mBAAA;AACA;AACA;EACA,qBAAA;AACA","file":"link.vue","sourcesContent":["<template>\r\n  <a\r\n    :href=\"disabled ? null : href\"\r\n    :class=\"[disabled && 'disabled', !underline && 'no-underline']\">\r\n      <slot></slot>\r\n    </a>\r\n</template>\r\n\r\n<script>\r\nexport default {\r\n  name: 'LgLink',\r\n  props: {\r\n    href: {\r\n      type: String\r\n    },\r\n    disabled: {\r\n      type: Boolean,\r\n      default: false\r\n    },\r\n    underline: {\r\n      type: Boolean,\r\n      default: false\r\n    }\r\n  }\r\n}\r\n</script>\r\n\r\n<style scoped>\r\n.disabled {\r\n  cursor: not-allowed;\r\n}\r\n.no-underline {\r\n  text-decoration: none;\r\n}\r\n</style>\r\n"]}, media: undefined });
+    inject("data-v-2847d94b_0", { source: "\n.disabled[data-v-2847d94b] {\r\n  cursor: not-allowed;\n}\n.no-underline[data-v-2847d94b] {\r\n  text-decoration: none;\n}\r\n", map: {"version":3,"sources":["D:\\Big_FrontEnd\\CodeBase\\fed-e-task-03-04\\note\\code\\3-4-3-3-组件库开发\\03-Hwelement\\packages\\link\\src\\link.vue"],"names":[],"mappings":";AA4BA;EACA,mBAAA;AACA;AACA;EACA,qBAAA;AACA","file":"link.vue","sourcesContent":["<template>\r\n  <a\r\n    :href=\"disabled ? null : href\"\r\n    :class=\"[disabled && 'disabled', !underline && 'no-underline']\">\r\n      <slot></slot>\r\n    </a>\r\n</template>\r\n\r\n<script>\r\nexport default {\r\n  name: 'HwLink',\r\n  props: {\r\n    href: {\r\n      type: String\r\n    },\r\n    disabled: {\r\n      type: Boolean,\r\n      default: false\r\n    },\r\n    underline: {\r\n      type: Boolean,\r\n      default: false\r\n    }\r\n  }\r\n}\r\n</script>\r\n\r\n<style scoped>\r\n.disabled {\r\n  cursor: not-allowed;\r\n}\r\n.no-underline {\r\n  text-decoration: none;\r\n}\r\n</style>\r\n"]}, media: undefined });
 
   };
   /* scoped */

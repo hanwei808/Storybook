@@ -2,7 +2,7 @@ import AsyncValidator from 'async-validator';
 
 //
 var script = {
-  name: 'LgFormItem',
+  name: 'HwFormItem',
   inject: ['form'],
   props: {
     label: {

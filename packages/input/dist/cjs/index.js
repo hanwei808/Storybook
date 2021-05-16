@@ -8,7 +8,7 @@
 //
 
 var script = {
-  name: 'LgInput',
+  name: 'HwInput',
   inheritAttrs: false,
   props: {
     value: {
@@ -24,7 +24,7 @@ var script = {
       this.$emit('input', evt.target.value);
       const findParent = parent => {
         while (parent) {
-          if (parent.$options.name === 'LgFormItem') {
+          if (parent.$options.name === 'HwFormItem') {
             break
           } else {
             parent = parent.$parent;

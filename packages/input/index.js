@@ -1,7 +1,7 @@
-import LgInput from './src/input.vue'
+import HwInput from './src/input.vue'
 
-LgInput.install = Vue => {
-  Vue.component(LgInput.name, LgInput)
+HwInput.install = Vue => {
+  Vue.component(HwInput.name, HwInput)
 }
 
-export default LgInput
+export default HwInput

@@ -1,7 +1,7 @@
-import LgLink from './src/link.vue'
+import HwLink from './src/link.vue'
 
-LgLink.install = Vue => {
-  Vue.component(LgLink.name, LgLink)
+HwLink.install = Vue => {
+  Vue.component(HwLink.name, HwLink)
 }
 
-export default LgLink
+export default HwLink

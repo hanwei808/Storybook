@@ -8,7 +8,7 @@ var AsyncValidator__default = /*#__PURE__*/_interopDefaultLegacy(AsyncValidator)
 
 //
 var script = {
-  name: 'LgFormItem',
+  name: 'HwFormItem',
   inject: ['form'],
   props: {
     label: {

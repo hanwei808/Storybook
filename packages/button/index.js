@@ -1,7 +1,7 @@
-import LgButton from './src/button.vue'
+import HwButton from './src/button.vue'
 
-LgButton.install = Vue => {
-  Vue.component(LgButton.name, LgButton)
+HwButton.install = Vue => {
+  Vue.component(HwButton.name, HwButton)
 }
 
-export default LgButton
+export default HwButton

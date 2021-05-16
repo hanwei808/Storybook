@@ -1,13 +1,13 @@
-import LgInput from '../'
+import HwInput from '../'
 
 export default {
-  title: 'LgInput',
-  component: LgInput
+  title: 'HwInput',
+  component: HwInput
 }
 
 export const Text = () => ({
-  components: { LgInput },
-  template: '<lg-input v-model="value"></lg-input>',
+  components: { HwInput },
+  template: '<Hw-input v-model="value"></Hw-input>',
   data () {
     return {
       value: 'admin'
@@ -16,8 +16,8 @@ export const Text = () => ({
 })
 
 export const Password = () => ({
-  components: { LgInput },
-  template: '<lg-input type="password" v-model="value"></lg-input>',
+  components: { HwInput },
+  template: '<Hw-input type="password" v-model="value"></Hw-input>',
   data () {
     return {
       value: 'admin'
